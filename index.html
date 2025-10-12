@@ -4,10 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>JDev | Portfolio</title>
-  <link rel="icon" type="image/png" href="JDEV.png" />
-  <link rel="stylesheet" href="Design.css" />
-</head>
+  <link rel="icon" href="JDEV.png" type="image/png" />
+  <link rel="stylesheet" href="Design.css">
+</head> 
 <body>
+  <!-- NAVIGATION SHITS-->
   <div class="nav">
     <nav class="navbar">
       <div class="navbox">
@@ -21,40 +22,44 @@
             <li><a href="#about">About</a></li>
             <li><a href="#tech-stacks">Language</a></li>
           </ul>
-          <div class="sign">
-            <button class="reg active"><a href="#">Sign In</a></button>
-            <button class="reg active"><a href="#">Sign Up</a></button>
-          </div>
+        </div>
+        <div class="sign">
+          <button class="reg active"><a href="#">Sign In</a></button>
+          <button class="reg active"><a href="#">Sign Up</a></button>
+          
+          <!-- THEME TOGGLE BUTTON -->
+          <button id="theme-toggle" class="reg active">Light Mode</button>
         </div>
       </div>
     </nav>
   </div>
+
+  <!-- MAIN CONTENT -->
   <main>
+    <!-- LOGIN SECTION -->
     <section id="home" class="login-section">
       <div class="container">
-        <form action="#" method="post">
+        <form>
           <div class="title">
-            <h2> Sign In</h2>
+            <h2>Sign In</h2>
           </div>
 
           <div class="input-box">
             <label for="username">Username</label>
-            <input type="text" id="username" name="username" placeholder="Enter username" required />
+            <input type="text" id="username" name="username" placeholder="Enter username" required>
           </div>
 
           <div class="input-box">
             <label for="password">Password</label>
-            <input type="password" id="password" name="password" placeholder="Enter password" required />
+            <input type="password" id="password" name="password" placeholder="Enter password" required>
           </div>
 
-          <div class="text">  
-            <span class="remember">
-              <input type="checkbox" id="remember" />
+          <div class="text">
+            <span>
+              <input type="checkbox" id="remember">
               <label for="remember">Remember me</label>
             </span>
-            <span class="forgot-password">
-              <a href="#">Forgot Password?</a>
-            </span>
+            <span><a href="#">Forgot Password?</a></span>
           </div>
 
           <button type="submit" class="btn">Login</button>
@@ -68,23 +73,23 @@
         <h2>My Projects</h2>
 
         <div class="project-card">
-          <img src="sti-logo.png" alt="Project 1" />
-          <h3> STI BACOOR </h3>
-          <p> STI COLLEGE BACOOR is where i take my it course</p>
+          <img src="sti-logo.png" alt="STI Bacoor project logo">
+          <h3>STI Bacoor</h3>
+          <p>STI College Bacoor is where I pursue my IT course.</p>
           <a href="#">View Project</a>
         </div>
 
         <div class="project-card">
-          <img src="Untitled design (4).png" alt="Project 2" />
-          <h3> Futurstic Set Up</h3>
-          <p>Futurstic pc Set Up with modern design</p>
+          <img src="Untitled design (4).png" alt="Futuristic Set Up project">
+          <h3>Futuristic Set Up</h3>
+          <p>A modern PC setup with futuristic design.</p>
           <a href="#">View More</a>
         </div>
 
         <div class="project-card">
-          <img src="Untitled design (5).png" alt="Project 3" />
-          <h3> Ai Integration </h3>
-          <p> Ai Integration for pc Set up</p>
+          <img src="Untitled design (5).png" alt="AI Integration project">
+          <h3>AI Integration</h3>
+          <p>AI integration for enhanced functionality in setups.</p>
           <a href="#">View Details</a>
         </div>
       </div>
@@ -96,47 +101,60 @@
         <h2>About Me</h2>
 
         <div class="about-card">
-          <img src="472950186_122223797060067207_6589731237639911278_n.jpg" alt="About Me 1" />
+          <img src="472950186_122223797060067207_6589731237639911278_n.jpg" alt="Background">
           <h3>Background</h3>
-          <p>I have experince on basic programming such creating solutions that solves the problem of my clients</p>
+          <p>I have experience in basic programming and creating solutions to solve client problems.</p>
         </div>
 
         <div class="about-card">
-          <img src="472806928_122223341420067207_4492911304235089054_n (1).jpg" alt="About Me 2" />
+          <img src="472806928_122223341420067207_4492911304235089054_n (1).jpg" alt="Skills">
           <h3>Skills</h3>
-          <p>HTML, CSS, JAVA, PYTHON and other technologies I work with.</p>
+          <p>HTML, CSS, Java, Python, and more technologies I work with.</p>
         </div>
 
         <div class="about-card">
-          <img src="469478061_122217155750067207_8208913928258954957_n.jpg" alt="About Me 3" />
+          <img src="469478061_122217155750067207_8208913928258954957_n.jpg" alt="Hobbies">
           <h3>Hobbies</h3>
           <p>I enjoy coding, gaming, reading tech blogs, and learning new programming languages.</p>
         </div>
       </div>
     </section>
 
-  <section id="tech-stacks" class="tech-section">
+    <!-- TECH STACKS SECTION -->
+    <section id="tech-stacks" class="tech-section">
+      <div class="tech-stacks-container">
+        <h2>Technologies I Use</h2>
 
-    <div class="tech-stacks-container">
-       <h2> Language </h2>
-       <div class="tech-card">
-        <img src="java-logo-transparent-free-png.webp" alt="Techstack 1"/>
-        <h3> JAVA </h3>
-        <p> I can utilize java to create projects that fits on my clients needs </p>
-        </div>
+        <div class="tech-card">
+          <img src="java-logo-transparent-free-png.webp" alt="Java Logo">
+          <h3>Java</h3>
+          <p>I use Java to create projects that meet client needs.</p>
         </div>
 
         <div class="tech-card">
-          <img src="Python-Logo.png" alt="Techstack 2" />
-          <h3> PYTHON</h3>
-          <p>  I can utilize phython to create projects that fits on my clients needs</p>
+          <img src="Python-Logo.png" alt="Python Logo">
+          <h3>Python</h3>
+          <p>I use Python to build projects tailored to client specifications.</p>
         </div>
       </div>
-  </section>
-     
-    </main>
+    </section>
+  </main>
+
+  <!--SWITCH THAT SHIT SCRIPT-->
+  <script>
+    const toggleBtn = document.getElementById('theme-toggle');
+    const body = document.body;
+
+    toggleBtn.addEventListener('click', () => {
+      body.classList.toggle('light-theme');
+
+      if (body.classList.contains('light-theme')) {
+        toggleBtn.textContent = "Dark Mode";
+      } else {
+        toggleBtn.textContent = "Light Mode";
+      }
+    });
+  </script>
+
 </body>
 </html>
-
-
-
